@@ -20,6 +20,7 @@ p {
 
 .title {
   font-family: "EB Garamond", serif;
+  font-weight: 800;
 }
 
 .description {
@@ -74,9 +75,8 @@ header nav {
   margin: 0 auto;
 }
 
-.banner-container .section-title {
+.banner-container .banner-title {
   font-size: 72px;
-  font-weight: 800;
   color: #fff;
   line-height: 85px;
 }
@@ -101,3 +101,68 @@ header nav {
   font-size: 20px;
 }
 /* header banner end */
+
+/* practice-area start */
+.practice-area {
+  margin-top: 120px;
+}
+
+.section-head {
+  max-width: 714px;
+  margin: 0 auto;
+}
+.section-head .section-title {
+  font-size: 40px;
+  color: #414040;
+}
+.section-head .section-description {
+  color: #707070;
+  margin: 18px 0px 50px;
+}
+
+.area-box {
+  padding: 40px 60px;
+}
+.area-box:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(231, 231, 231, 1.5),
+    rgba(243, 243, 243, 0)
+  );
+  /* border: 1px solid #e7e7e7; */
+}
+
+.area-box:nth-child(1),
+.area-box:nth-child(2),
+.area-box:nth-child(3) {
+  border-bottom: 1px solid #dbdbdb;
+}
+.area-box:nth-child(2),
+.area-box:nth-child(5) {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+
+.area-box img {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+}
+
+.area-box .title {
+  font-size: 32px;
+  color: #414040;
+  margin: 22px 0px 18px;
+}
+.area-box .section-description {
+  color: rgba(112, 112, 112, 1);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.area-box i {
+  font-size: 42px;
+  color: #b68c5a;
+}
+
+/* practice-area end */
