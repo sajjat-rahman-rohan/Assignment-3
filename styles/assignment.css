@@ -171,6 +171,9 @@ header nav {
 .carousel-caption {
   margin-bottom: 60px;
 }
+.carousel-item img {
+  border-radius: 5px;
+}
 .carousel-item .carousel-caption img {
   width: 70px;
   height: 70px;
@@ -189,3 +192,39 @@ header nav {
   margin-bottom: 60px;
 }
 /* client end */
+
+/* f&q start */
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: #ffffff;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #dfdfdf;
+}
+
+.accordion-flush .accordion-item {
+  border-radius: 8px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #414040;
+}
+
+.accordion-item h2 button {
+  color: #414040;
+  font-size: 24px;
+  background: #dfdfdf;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/dash-lg.svg);
+}
+.accordion-button::after {
+  background-image: url(../images/plus-lg.svg);
+}
+
+/* f&q end */
