@@ -1,0 +1,26 @@
+/******************************** Media Queries **************************************/
+
+/* tablet Device */
+@media screen and (max-width: 576px) {
+  .banner {
+    padding: 80px 0px;
+  }
+  .banner-container .banner-title {
+    font-size: 42px;
+  }
+
+  .area-box:nth-child(4),
+  .area-box:nth-child(5) {
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .carousel-caption {
+    margin-bottom: 40px;
+  }
+  .carousel-indicators {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

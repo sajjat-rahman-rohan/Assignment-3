@@ -34,10 +34,8 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="site-logo">
-            <img src="./images/logo2.png" alt="Justice" />
-            <!-- <a class="navbar-brand title" href="#">Justice</a> -->
+            <img src="./images/logo2.png" alt="" />
           </div>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -49,11 +47,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse d-flex justify-content-between align-items-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav m-auto gap-4 mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto gap-4 mb-2 mt-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -83,10 +78,11 @@
                 class="primary-btn description"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
-                type="submit"
+                type="button"
               >
                 Free Consultation
               </button>
+
               <!-- Modal -->
               <div
                 class="modal fade"
@@ -95,11 +91,13 @@
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
-                <div class="modal-dialog">
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
                   <div class="modal-content">
                     <div class="modal-header">
                       <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        Modal title
+                        what is bootstrap?
                       </h1>
                       <button
                         type="button"
@@ -108,7 +106,14 @@
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div class="modal-body">Hi I am Sajjat Rahman</div>
+                    <div class="modal-body">
+                      Bootstrap is a free and open-source CSS framework directed
+                      at responsive, mobile-first front-end web development. It
+                      contains HTML, CSS and JavaScript-based design templates
+                      for typography, forms, buttons, navigation, and other
+                      interface components.
+                      <br /><br /><br />
+                    </div>
                     <div class="modal-footer">
                       <button
                         type="button"
@@ -132,25 +137,30 @@
 
       <!-- header banner start -->
       <div class="banner">
-        <div class="banner-container text-center">
-          <h1 class="title banner-title">
-            We Provide Effective Legal Solutions
-          </h1>
-          <p class="description section-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
-          </p>
-          <form class="banner-search d-flex justify-content-between gap-4">
-            <input
-              type="text"
-              name="search-text"
-              id=""
-              placeholder="Search your services"
-              required
-            />
-            <button class="primary-btn" type="submit">Search</button>
-          </form>
+        <div class="row">
+          <div
+            class="col-lg-8 col-sm-10 col-11 m-auto banner-container text-center"
+          >
+            <h1 class="title banner-title text-white">
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <form class="banner-search d-md-flex justify-content-between gap-4">
+              <input
+                class="mt-4"
+                type="text"
+                name="search-text"
+                id=""
+                placeholder="Search your services"
+                required
+              />
+              <button class="primary-btn mt-4" type="submit">Search</button>
+            </form>
+          </div>
         </div>
       </div>
       <!-- header banner end -->
@@ -159,19 +169,21 @@
     <main class="container">
       <!-- practice-area start -->
       <section class="practice-area text-center">
-        <div class="section-head">
-          <h3 class="title section-title">The Legal Practice Area</h3>
-          <p class="description section-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
-          </p>
+        <div class="row">
+          <div class="col-lg-8 col-10 m-auto section-head">
+            <h3 class="title section-title">The Legal Practice Area</h3>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
         </div>
 
         <div class="practice-area-box">
           <div class="area-box-container">
             <div class="row">
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/business.png" alt="" />
                 <h2 class="title">Business Law</h2>
                 <p class="section-description description">
@@ -181,7 +193,7 @@
                 </p>
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </div>
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/criminal.png" alt="" />
                 <h2 class="title">Criminal Law</h2>
                 <p class="section-description description">
@@ -191,7 +203,7 @@
                 </p>
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </div>
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/child.png" alt="" />
                 <h2 class="title">Child Support</h2>
                 <p class="section-description description">
@@ -201,7 +213,7 @@
                 </p>
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </div>
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/education.png" alt="" />
                 <h2 class="title">Education Law</h2>
                 <p class="section-description description">
@@ -211,7 +223,7 @@
                 </p>
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </div>
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/divorce.png" alt="" />
                 <h2 class="title">Divorce Law</h2>
                 <p class="section-description description">
@@ -221,7 +233,7 @@
                 </p>
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </div>
-              <div class="area-box col-4">
+              <div class="area-box col-md-4">
                 <img src="./images/tax.png" alt="" />
                 <h2 class="title">Tax Law</h2>
                 <p class="section-description description">
@@ -239,13 +251,15 @@
 
       <!-- client start -->
       <section class="client practice-area text-center">
-        <div class="section-head">
-          <h3 class="title section-title">What Our Client Say</h3>
-          <p class="description section-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
-          </p>
+        <div class="row">
+          <div class="col-lg-8 col-10 m-auto section-head">
+            <h3 class="title section-title">What Our Client Say</h3>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
         </div>
 
         <div
@@ -276,7 +290,7 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active mt-4">
+            <div class="carousel-item active">
               <img
                 src="./images/rsz_slider-1.jpg"
                 class="d-block w-100"
@@ -290,7 +304,7 @@
                 >
                   UIX Designer
                 </p>
-                <p class="description section-description">
+                <p class="description section-description d-sm-none">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC, making it over 2000 years old. Richard McClintock,
@@ -313,7 +327,7 @@
                 >
                   Front-End Developer
                 </p>
-                <p class="description section-description">
+                <p class="description section-description d-sm-none">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC, making it over 2000 years old. Richard McClintock,
@@ -336,7 +350,7 @@
                 >
                   Back-End Developer
                 </p>
-                <p class="description section-description">
+                <p class="description section-description d-sm-none">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC, making it over 2000 years old. Richard McClintock,
@@ -370,17 +384,22 @@
 
       <!-- F&Q start -->
       <section class="question practice-area text-center">
-        <div class="section-head">
-          <h3 class="title section-title">Frequently Asked Any Questions</h3>
-          <p class="description section-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
-          </p>
+        <div class="row">
+          <div class="col-lg-8 col-10 m-auto section-head mb-3">
+            <h3 class="title section-title">Frequently Asked Any Questions</h3>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
         </div>
 
-        <div class="row">
-          <div class="col-6">
+        <div class="row g-4">
+          <div class="col-lg-6 d-lg-none d-md-block">
+            <img src="./images/faq.png" class="w-75" alt="" />
+          </div>
+          <div class="col-lg-6">
             <div
               class="accordion accordion-flush text-start"
               id="accordionFlushExample"
@@ -500,8 +519,8 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <img src="./images/faq.png" class="w-100" alt="" />
+          <div class="col-lg-6 d-md-none d-lg-block">
+            <img src="./images/faq.png" class="w-75" alt="" />
           </div>
         </div>
       </section>
@@ -509,18 +528,20 @@
 
       <!-- contact start -->
       <section class="contact practice-area text-center">
-        <div class="section-head">
-          <h3 class="title section-title">Contact With Us</h3>
-          <p class="description section-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
-          </p>
+        <div class="row">
+          <div class="col-lg-8 col-10 m-auto section-head mb-3">
+            <h3 class="title section-title">Contact With Us</h3>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
         </div>
 
-        <div class="row">
-          <div class="col-6 mt-4">
-            <div class="row g-4 contact-box-container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="row contact-box-container mx-1">
               <div class="col-6 contact-box">
                 <img src="./images/address.png" alt="" />
                 <h3 class="title section-title">Address</h3>
@@ -558,7 +579,7 @@
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-lg-6">
             <form action="" class="contact-form">
               <input
                 class="description"
@@ -597,6 +618,68 @@
       </section>
       <!-- contact end -->
     </main>
+
+    <footer>
+      <!-- footer start -->
+      <div class="footer container">
+        <div class="row text-white g-4">
+          <div class="col-md-3">
+            <div class="footer-logo mb-4">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <p class="description section-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title section-title mb-4">Usefull Link</h3>
+            <ul class="mx-2">
+              <li class="description section-description">Homes</li>
+              <li class="description section-description">About Us</li>
+              <li class="description section-description">Cases</li>
+              <li class="description section-description">Blog</li>
+              <li class="description section-description">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title section-title mb-4">Contact Now</h3>
+            <p class="description section-description">
+              555 4th 5t NW, Washington <br />
+              DC 20530, United States
+            </p>
+            <p class="description section-description">
+              +88 01750 000 000 <br />
+              +88 01750 000 000
+            </p>
+            <p class="description section-description">
+              info@gmail.com <br />
+              info@gmail.com
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title section-title mb-4">Subscribe</h3>
+            <p class="description section-description">
+              Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+            </p>
+            <form class="banner-search d-flex justify-content-between mt-4">
+              <input
+                type="text"
+                name="search-text"
+                id="send"
+                placeholder="Email Address"
+                required
+              />
+              <button type="submit">
+                <img src="./images/send.png" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- footer end -->
+    </footer>
 
     <!-- bootstrap framework js link -->
     <script
