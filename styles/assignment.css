@@ -1,5 +1,4 @@
 /* common styles start */
-
 body {
   margin: 0;
   padding: 0;
@@ -46,6 +45,9 @@ header nav {
 .nav-link {
   font-size: 18px;
   font-weight: 400;
+  color: rgba(112, 112, 112, 1);
+}
+.nav-item .nav-link:hover {
   color: rgba(112, 112, 112, 1);
 }
 
@@ -165,6 +167,7 @@ header nav {
 .carousel-item img {
   border-radius: 5px;
 }
+
 .carousel-item .carousel-caption img {
   width: 70px;
   height: 70px;
